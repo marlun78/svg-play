@@ -1,27 +1,27 @@
 # SVG Playground
 
-### Install
-
-```bash
-npm install -g browserify && npm install
-```
-
 ### Build
-
+To run the build you need Browserify installed globally:
+```bash
+npm i -g browserify
+```
+Then run the build:
 ```bash
 npm run build
 ```
 
 ### Run Tests
-
+To run the tests you need Jasmine installed globally:
+```bash
+npm i -g jasmine
+```
+Then run the tests:
 ```bash
 npm test
 ```
 
-### Code Completion
-
-Optionally for better code completion (depending on IDE support), install tsd and typings.
-
+### Developing
+Optionally for better code completion (depending on IDE support), install `tsd` and typings.
 ```bash
-npm install -g tsd && tsd install
+npm i -g tsd && tsd install
 ```
