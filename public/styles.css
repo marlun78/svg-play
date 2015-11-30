@@ -1,0 +1,103 @@
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #55acee;
+    font-weight: 700;
+}
+
+button {
+    background-color: #e74c3c;
+    box-shadow: 0 5px 0 0 #ce3323;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 22px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #ff6656;
+}
+
+.main-content {
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    flex: 2;
+    height: 100%;
+}
+
+.point,
+.point-disabled,
+.circle,
+.parallelogram {
+    fill: none;
+    stroke-width: 1;
+}
+
+.point {
+    fill: #e74c3c;
+    stroke: #e74c3c;
+}
+
+.dragging .point {
+    cursor: move;
+}
+
+.point-disabled {
+    fill: #999;
+    stroke: #999;
+}
+
+.circle {
+    stroke: #f1c40f;
+}
+
+.parallelogram {
+    stroke: #55acee;
+}
+
+.stats {
+    bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    left: 10px;
+    position: absolute;
+    white-space: pre;
+}
+
+.side-panel {
+    flex: 1;
+    overflow: scroll;
+    padding: 40px;
+}
+
+.side-panel > :first-child {
+    margin-top: 0;
+}
+
+.bg-squared {
+    background-color: #fff;
+    background-image:
+        linear-gradient(#eef5f6 2px, transparent 2px),
+        linear-gradient(90deg, #eef5f6 2px, transparent 2px),
+        linear-gradient(#eef5f6 1px, transparent 1px),
+        linear-gradient(90deg, #eef5f6 1px, transparent 1px);
+    background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}

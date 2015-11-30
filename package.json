@@ -1,0 +1,12 @@
+{
+    "name": "svg-play",
+    "version": "1.0.0",
+    "description": "SVG Playground",
+    "main": "src/main.js",
+    "scripts": {
+        "build": "browserify src/main.js -o public/scripts.js",
+        "test": "jasmine"
+    },
+    "author": "Martin Eneqvist (https://github.com/marlun78)",
+    "license": "MIT"
+}

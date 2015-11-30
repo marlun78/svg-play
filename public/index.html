@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <title>SVG Playground</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <main class="main-content bg-squared">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="100%" width="100%" id="svg"></svg>
+            <div class="stats" id="stats"></div>
+        </main>
+        <aside class="side-panel">
+            <h1>Description</h1>
+            <p>Click the area to the left in three different locations to insert three points.
+                After you’ve done so, two extra shapes will be drawn:
+                A parallelogram for the entered points and a circle with the same center and area
+                as the parallelogram. You can click and drag around the pints to adjust its location.
+            </p>
+            <p>If you want to start over, just click the reset-button below.</p>
+            <button id="reset" type="button">Reset</button>
+            <p>By: Martin Eneqvist</p>
+        </aside>
+        <script src="scripts.js"></script>
+    </body>
+</html>
