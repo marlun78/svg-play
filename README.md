@@ -1,5 +1,7 @@
 # SVG Playground
 
+The project comes prebuilt, just open `public/index.html` in your browser.
+
 ### Build
 To run the build you need Browserify installed globally:
 ```bash
